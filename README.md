@@ -1,5 +1,22 @@
 ### Starter Project for the Material UI playlist
 
-Download the code & run **npm install** to install dependencies before starting the app.
+# Install dependences
 
-You'll also need to install Material UI as a dependency. To do this run **npm install @material-ui/core**
+```
+npm install
+npm install @mui/material
+npm install -g json-server
+npm install axios --save
+npm install react-router-dom --save
+npm install date-fns
+```
+
+# How to run codes
+
+```
+first run:
+json-server --watch .\data\db.json --port 8000
+
+Then run:
+npm start
+```
