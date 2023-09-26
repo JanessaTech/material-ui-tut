@@ -9,6 +9,7 @@ npm install -g json-server
 npm install axios --save
 npm install react-router-dom --save
 npm install date-fns
+npm install react-masonry-css --save
 ```
 
 # How to run codes

@@ -13,6 +13,8 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import { useTheme } from '@mui/material';
 import format from 'date-fns/format';
+import Avatar from '@mui/material/Avatar';
+
 
 const  drawerWidth = 240
 
@@ -41,6 +43,9 @@ const sx = {
     toolbar: (theme) => theme.mixins.toolbar,
     date: {
         flexGrow: 1
+    },
+    avatar: {
+        marginLeft: (theme) => theme.spacing(2)
     }
 }
 
@@ -84,6 +89,7 @@ export default function Layout({children}) {
                     Today is the {format(new Date(), 'do MMMM Y')}
                 </Typography>
                 <Typography>Janessa</Typography>
+                <Avatar src="/prof.png" sx={sx.avatar}/>
             </Toolbar>
         </AppBar>
         <Drawer sx={sx.drawer}
